@@ -1,0 +1,41 @@
+td {
+  width: 15%;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+tbody > tr:hover {
+  box-shadow: -4px 4px 10px 1px rgba(45, 48, 51, 0.5);
+}
+
+.terminal {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 700;
+  border-radius: 50%;
+  border: 1px solid #52a23a;
+  color: #52a23a;
+}
+
+.terminal-d {
+  border: 1px solid #1eb7ee;
+  color: #1eb7ee;
+}
+
+.airline {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    width: 30%;
+  }
+
+  &__name {
+    text-align: center;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #fff;
+}
+
+th {
+  padding: 20px 0 20px 0;
+  color: gray;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #c6dcd4;
+}
+
+tbody > tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.no-flights {
+  height: 100px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #383434;
+}
