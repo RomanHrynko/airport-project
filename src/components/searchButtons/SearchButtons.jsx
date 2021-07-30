@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Schedule from '../schedule/Schedule';
-import './searchPage.scss';
+import './searchButtons.scss';
 
 const SearchButtons = () => {
   const { pathname, search } = useLocation();
