@@ -20,9 +20,9 @@ const Schedule = () => {
   const newFlightsList = searchFlightListFiltered(flightsList, searchFlight);
 
   useEffect(() => {
-    const date = moment(new Date()).format('DD-MM-YYYY');
+    const currentDay = moment(new Date()).format('DD-MM-YYYY');
 
-    dispatch(getFlightsList(direction, date));
+    dispatch(getFlightsList(direction, currentDay));
   }, [search, pathname]);
 
   if (flightsList.length === 0) {

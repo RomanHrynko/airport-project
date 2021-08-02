@@ -1,6 +1,5 @@
 import React from 'react';
 import './header.scss';
-import Search from '../search/Search';
 
 const Header = () => {
   return (
@@ -48,7 +47,6 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-      <Search />
     </>
   );
 };

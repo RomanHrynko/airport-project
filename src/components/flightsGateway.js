@@ -1,7 +1,7 @@
 import moment from 'moment';
 
-export const fetchFlightsList = (direction, dateFlights) =>
-  fetch(`https://api.iev.aero/api/flights/${dateFlights}`)
+export const fetchFlightsList = (direction, currentDay) =>
+  fetch(`https://api.iev.aero/api/flights/${currentDay}`)
     .then(response => {
       if (response.ok) {
         return response.json();
@@ -26,5 +26,5 @@ export const fetchFlightsList = (direction, dateFlights) =>
         };
       }),
     )
-    .then(res => res.filter(el => moment(el.localTime).format('DD-MM-YYYY') === dateFlights))
+    .then(res => res.filter(el => moment(el.localTime).format('DD-MM-YYYY') === currentDay))
     .catch(error => alert(error.message));
