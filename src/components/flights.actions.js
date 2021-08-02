@@ -11,11 +11,10 @@ export const setFlightsList = flightsList => {
   };
 };
 
-export const getFlightsList = (direction, dateFlights) => {
+export const getFlightsList = (direction, currentDay) => {
   const thunkAction = function (dispatch) {
-    fetchFlightsList(direction, dateFlights).then(flightsList =>
+    fetchFlightsList(direction, currentDay).then(flightsList =>
       dispatch(setFlightsList(flightsList)),
     );
   };
   return thunkAction;
-};
