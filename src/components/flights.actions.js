@@ -18,3 +18,4 @@ export const getFlightsList = (direction, currentDay) => {
     );
   };
   return thunkAction;
+};
